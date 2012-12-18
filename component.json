@@ -1,0 +1,13 @@
+{
+  "name": "join",
+  "repo": "component/join",
+  "description": "Join a list",
+  "version": "0.0.1",
+  "keywords": ["join", "list"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
