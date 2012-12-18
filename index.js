@@ -11,5 +11,9 @@
  */
 
 module.exports = function(arr, str, sep){
-
+  str = str || 'and';
+  sep = sep || ', ';
+  str = ' ' + str + ' ';
+  if (arr.length < 2) return arr[0] || '';
+  return arr.slice(0, -1).join(sep) + str + arr[arr.length - 1];
 };
