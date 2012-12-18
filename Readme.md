@@ -1,7 +1,7 @@
 
 # join
 
-  Join a list
+  Join a list in a nice human friendly way.
 
 ## Installation
 
