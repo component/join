@@ -2,7 +2,7 @@
   "name": "join-component",
   "repo": "component/join",
   "description": "Join a list",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
