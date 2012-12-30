@@ -30,7 +30,7 @@ should join.
 join([], 'and').should.equal('');
 join(['foo'], 'and').should.equal('foo');
 join(['foo', 'bar'], 'and').should.equal('foo and bar');
-join(['foo', 'bar', 'raz'], 'or').should.equal('foo, bar or raz');
+join(['foo', 'bar', 'baz'], 'or').should.equal('foo, bar or baz');
 ```
 
 <a name="joinarr-str-with-oxford-comma"></a>
@@ -46,7 +46,7 @@ join(['foo', 'bar'], ', or').should.equal('foo or bar');
 should join with 3 or more items.
 
 ```js
-join(['foo', 'bar', 'raz'], ', and').should.equal('foo, bar, and raz');
+join(['foo', 'bar', 'baz'], ', and').should.equal('foo, bar, and baz');
 ```
 
 ## License

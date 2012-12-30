@@ -12,7 +12,7 @@ describe('join(arr, str)', function(){
      join([], 'and').should.equal('');
      join(['foo'], 'and').should.equal('foo');
      join(['foo', 'bar'], 'and').should.equal('foo and bar');
-     join(['foo', 'bar', 'raz'], 'or').should.equal('foo, bar or raz');
+     join(['foo', 'bar', 'baz'], 'or').should.equal('foo, bar or baz');
   })
 })
 
@@ -24,6 +24,6 @@ describe('join(arr, str) with Oxford comma', function() {
   })
 
   it('should join with 3 or more items', function() {
-    join(['foo', 'bar', 'raz'], ', and').should.equal('foo, bar, and raz');
+    join(['foo', 'bar', 'baz'], ', and').should.equal('foo, bar, and baz');
   })
 })
