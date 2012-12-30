@@ -15,3 +15,15 @@ describe('join(arr, str)', function(){
      join(['foo', 'bar', 'raz'], 'or').should.equal('foo, bar or raz');
   })
 })
+
+describe('join(arr, str) with Oxford comma', function() {
+  it('should remove comma with less than 3 items', function() {
+    join([], ', or').should.equal('');
+    join(['foo'], ', or').should.equal('foo');
+    join(['foo', 'bar'], ', or').should.equal('foo or bar');
+  })
+
+  it('should join with 3 or more items', function() {
+    join(['foo', 'bar', 'raz'], ', and').should.equal('foo, bar, and raz');
+  })
+})
